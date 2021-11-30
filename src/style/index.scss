@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color:#333;
+  font-size: 16px;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+body,ul,li,p,dl,dt,dd,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration:none;
+  color:#333;
+  cursor:pointer;
+}
+ul,li{
+  outline:none;
+  list-style:none;
+}
+div,table{
+  outline:none;
+}
+textarea{
+  resize:none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+div:focus {
+  outline: none;
+}
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+.elPagination{
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+.ellipsisDiv{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+// 设置滚动条样式
+/*css主要部分的样式*/
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+  width: 13px; /*对垂直流动条有效*/
+  height: 13px; /*对水平流动条有效*/
+  }
+  
+  /*定义滚动条的轨道颜色、内阴影及圆角*/
+  ::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  // background-color: rosybrown;
+  background-color: #fff;
+  border-radius: 3px;
+  }
+  
+  
+  /*定义滑块颜色、内阴影及圆角*/
+  ::-webkit-scrollbar-thumb{
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #E8E8E8;
+  }
+  
+  /*定义两端按钮的样式*/
+  ::-webkit-scrollbar-button {
+  background-color:cyan;
+  }
+  
+  /*定义右下角汇合处的样式*/
+  ::-webkit-scrollbar-corner {
+  background:khaki;
+  }
+// disabled 样式
+  /deep/ .el-input.is-disabled .el-input__inner,/deep/ .el-textarea.is-disabled .el-textarea__inner {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+  }
+// 图表背景样式
+  .basicContainer{
+    padding: 20px;
+    margin:10px 6px;
+    background-color: #FFF;
+    color: #303133;
+    border-radius: 4px;
+  }

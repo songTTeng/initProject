@@ -1,0 +1,11 @@
+// 全局变量
+
+// ele样式覆盖
+@import './element-ui.scss';
+
+// 初始化元素样式
+@import './index.scss';
+
+.w100{
+    width: 100%;
+}
